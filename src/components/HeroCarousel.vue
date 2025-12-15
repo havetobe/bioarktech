@@ -9,16 +9,22 @@
       <div class="absolute -left-16 top-16 h-72 w-72 rounded-full bg-white/60 blur-[120px]"></div>
       <div class="absolute right-12 top-10 h-80 w-80 rounded-full bg-white/30 blur-[140px]"></div>
 
-      <div class="relative z-10 flex h-full flex-col justify-between px-6 py-12 sm:px-16 lg:px-28">
-        <div class="max-w-2xl pt-6 sm:pt-10">
-          <p class="font-heading text-sm font-semibold uppercase tracking-[0.5em] text-slate-500">
+      <div class="relative z-10 mx-auto flex h-full w-full max-w-5xl flex-col justify-between px-6 py-12 text-left sm:px-10 lg:px-16">
+        <div class="pt-4 sm:pt-8">
+          <p class="font-heading text-sm font-semibold uppercase tracking-[0.5em] text-slate-400">
             {{ heroContent.eyebrow }}
           </p>
-          <h1
-            class="mt-6 font-heading text-4xl font-semibold text-slate-900 sm:text-5xl lg:text-[64px] lg:leading-[1.05]"
-          >
-            {{ heroContent.headline }}
-          </h1>
+          <div class="mt-4 space-y-2">
+            <p
+              class="font-heading text-4xl font-semibold text-slate-900 sm:text-5xl lg:text-[62px] lg:leading-[1.05]
+              bg-gradient-to-r from-brand-blue via-sky-500 to-emerald-400 bg-clip-text text-transparent"
+            >
+              {{ heroContent.headline }}
+            </p>
+            <p class="font-heading text-4xl font-semibold text-slate-900 sm:text-5xl lg:text-[62px] lg:leading-[1.05]">
+              {{ heroContent.subheadline }}
+            </p>
+          </div>
           <p class="mt-6 text-lg leading-relaxed text-slate-600 lg:text-xl">
             {{ heroContent.copy }}
           </p>
@@ -31,18 +37,14 @@
             </button>
             <div class="flex items-center gap-3 text-sm font-medium text-slate-500">
               <span class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-lg font-semibold text-slate-700">
-                24/7
               </span>
-              Dedicated scientific partner on call
             </div>
           </div>
         </div>
 
-        <div
-          class="mt-16 rounded-[32px] border border-white/40 bg-white/70 px-8 py-6 shadow-[0_30px_60px_rgba(15,23,42,0.08)] backdrop-blur"
-        >
+        <div class="mt-14 border-t border-slate-200/70 pt-8">
           <div class="grid gap-8 text-slate-700 sm:grid-cols-2 lg:grid-cols-3">
-            <div v-for="stat in heroContent.stats" :key="stat.label">
+            <div v-for="stat in heroContent.stats" :key="stat.label" class="text-left">
               <p class="text-3xl font-semibold text-slate-900 lg:text-4xl">{{ stat.value }}</p>
               <p class="text-xs uppercase tracking-[0.5em] text-slate-400">{{ stat.label }}</p>
             </div>

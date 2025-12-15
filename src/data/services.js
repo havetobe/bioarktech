@@ -10,18 +10,21 @@ export const services = [
     description:
       'Comprehensive viral packaging services, including AAV, Lentivirus, Retroviral (MLV), and Adenovirus systems.',
     image: servicesImage1,
+    category: 'Virus Packaging',
   },
   {
     id: 2,
     title: 'Cell Line Services',
     description: 'From vector design to monoclonal selection, validation, and banking.',
     image: servicesImage2,
+    category: 'Cell Lines',
   },
   {
     id: 3,
     title: 'Genome Editing Services',
     description: 'CRISPR overexpression, knockout, RNA knockdown, and ready-to-use kits for streamlined editing.',
     image: servicesImage3,
+    category: 'Genome Editing',
   },
   {
     id: 4,
@@ -29,5 +32,6 @@ export const services = [
     description:
       'End-to-end plasmid design, cloning, synthesis, and delivery with collaborative web-based design.',
     image: servicesImage4,
+    category: 'Synthesis & Cloning',
   },
 ];
