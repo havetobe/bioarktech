@@ -217,7 +217,7 @@
 
 <script setup>
 import { computed, ref } from 'vue';
-import logo from '/root/bioarktech/src/assets/Logo.png';
+import logo from '../assets/Logo.png';
 import NavChip from './common/NavChip.vue';
 import { useProductStore } from '../stores/productState.js';
 import { useGeneProductStore } from '../stores/geneProductState.js';
